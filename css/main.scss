@@ -6,7 +6,48 @@
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "reset",
-        "960",
-        "wfs"
+    "reset",
+    "960",
+    "wfs"
 ;
+
+@mixin navigation-bg {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#707170+0,414241+100 */
+    background: #707170; /* Old browsers */
+    background: -moz-linear-gradient(top,  #707170 0%, #414241 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #707170 0%,#414241 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #707170 0%,#414241 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#707170', endColorstr='#414241',GradientType=0 ); /* IE6-9 */
+}
+
+.site-nav {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.5);
+    padding: 1em;
+    @include navigation-bg;
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        display: inline-block;
+        padding: 0;
+    }
+    a {
+        background:none;
+        color: #fff;
+        font-family: "Helvetica Neue", Helvetica, sans-serif;
+        border-bottom: solid 2px transparent;
+        transition: all 0.5s ease-out;
+        padding: 0;
+        margin: 0;
+        &:hover {
+            border-color: #a90d1c !important;
+        }
+        &.active {
+            border-bottom: solid 2px #fff;
+        }
+    }
+}
