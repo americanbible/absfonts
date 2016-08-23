@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About
+title: Montserrat - American Bible Society
 fontname: Montserrat
 bodyclass: montserrat
 permalink: /montserrat/
