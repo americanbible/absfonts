@@ -3,6 +3,10 @@
 ---
 @charset "utf-8";
 
+body.gotham {
+    font-family: "Gotham SSm A", "Gotham SSm B";
+}
+
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
