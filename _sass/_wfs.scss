@@ -19,11 +19,11 @@ body {
 /* Headings & labels
 ----------------------------------------------- */
 h1 {
-	font: 36px/48px Verdana;
+	font: 36px/48px "Helvetica Neue", Helvetica;
 	font-weight: normal;
 	}
 h2 {
-	font: normal 13px/18px Verdana, sans-serif;
+	font: normal 13px/18px "Helvetica Neue", Helvetica, sans-serif;
 	color: #a90d1c;
 	}
 h2, p { margin: 18px 0; }
@@ -83,7 +83,7 @@ a:active {
 	margin-left: -96px;
 	margin-right: 0;
 	font-size: 13px;
-	font-family: Verdana, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
 	text-align: right;
 	}
 
@@ -110,7 +110,7 @@ a:active {
 .bodysize table th {
 	padding: 0 0 6px 12px;
 	border-bottom: 1px #eeeee2 solid;
-	font: normal 13px Verdana, sans-serif;
+	font: normal 13px "Helvetica Neue", Helvetica, sans-serif;
 	text-align: left;
 	color: #333;
 	background-color: #fff;
@@ -161,7 +161,7 @@ a:active {
 	display: block;
 	width: 80px;
 	font-size: 13px;
-	font-family: Verdana, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
 	color: #999;
 	}
 .white p span {
