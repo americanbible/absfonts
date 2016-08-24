@@ -60,6 +60,17 @@ body {
     }
 }
 
+.test-button {
+  font-size: 10px;
+  text-transform: uppercase;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: $blue !important;
+  letter-spacing: .05em;
+  &:hover {
+    color: $red;
+  }
+}
+
 
 /* Headings & labels
 ----------------------------------------------- */
