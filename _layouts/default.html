@@ -1,7 +1,18 @@
 <!DOCTYPE html>
 <html>
+  {% include head.html %}
 
-    {% include head.html %}
+  <body class="{{ page.bodyclass }}">
+
+    {% include navigation.html%}
+
+    <div id="brand" class="container_16 clearfix">
+      <a href="{{ site.baseurl }}/">
+        <img src="/images/abs-logo-horizontal.svg" alt="ABS Logo" class="logo">
+      </a>
+    </div>
+
     {% include specimen.html %}
 
+  </body>
 </html>

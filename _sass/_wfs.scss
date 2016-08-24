@@ -9,6 +9,9 @@ body {
 	}
 #brand {
 	padding: 2em 0;
+  a, a:hover, a:visited, a:link {
+    background-color: transparent;
+  }
 	.logo {
 		width: 300px;
 	}

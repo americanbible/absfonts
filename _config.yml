@@ -22,3 +22,12 @@ sass:
   style: compressed
 
 exclude: [node_modules, Gruntfile.js, package.json]
+
+gems:
+  - jekyll-redirect-from
+
+navigation:
+ - title: Gotham
+   url: /gotham/
+ - title: Montserrat
+   url: /montserrat/

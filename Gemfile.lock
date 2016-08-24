@@ -131,6 +131,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages (= 93)
+  jekyll-redirect-from
   json
 
 BUNDLED WITH
