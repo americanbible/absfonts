@@ -1,0 +1,13 @@
+{
+  "name": "ABSFonts",
+  "version": "0.0.1",
+  "description": "A play ground for ABS fonts",
+  "repository": "https://github.com/americanbible/absfonts.git",
+  "license" : "BSD-3-Clause",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-connect": "~0.6.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-shell": "~0.6.4"
+  }
+}
