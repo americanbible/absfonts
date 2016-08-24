@@ -1,3 +1,9 @@
+{% comment %}
+  To add a new font you will need to
+      1. add a `fontname.md` to the root and fill out the front matter
+      2. create an include file and name it `head-fontname.html` and put inside the `_includes` directory.
+      3. put any necessary css (@fontface) rules inside it. See `head-gotham.html` for examples
+{% endcomment %}
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -6,50 +12,11 @@
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-  {% if page.fontname == 'Gotham' %}
-      <link rel="stylesheet" type="text/css" href="{{ page.external_css }}" />
-      <style>
-          body.gotham {
-              font-family: "Gotham SSm A", "Gotham SSm B";
-          }
-      </style>
-  {% endif %}
-
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
-
-
-  {% if page.fontname == 'Montserrat'%}
-    <style>
-        @font-face {
-            font-family: 'Montserrat';
-            src: url('/fonts/montserrat/montserrat-regular.eot');
-            src: url('/fonts/montserrat/montserrat-regular.eot?#iefix') format('embedded-opentype'),
-                 url('/fonts/montserrat/montserrat-regular.woff2') format('woff2'),
-                 url('/fonts/montserrat/montserrat-regular.woff') format('woff'),
-                 url('/fonts/montserrat/montserrat-regular.ttf') format('truetype'),
-                 url('/fonts/montserrat/montserrat-regular.svg#montserratbold') format('svg');
-            font-weight: 400;
-            font-style: normal;
-
-        }
-        @font-face {
-            font-family: 'Montserrat';
-            src: url('/fonts/montserrat/montserrat-bold.eot');
-            src: url('/fonts/montserrat/montserrat-bold.eot?#iefix') format('embedded-opentype'),
-                 url('/fonts/montserrat/montserrat-bold.woff2') format('woff2'),
-                 url('/fonts/montserrat/montserrat-bold.woff') format('woff'),
-                 url('/fonts/montserrat/montserrat-bold.ttf') format('truetype'),
-                 url('/fonts/montserrat/montserrat-bold.svg#montserratlight') format('svg');
-            font-weight: 700;
-            font-style: normal;
-
-        }
-        body {
-            font-family: "Montserrat";
-        }
-    </style>
+  {% if page.fontname == page.fontname %}
+  {% include head-{{ page.fontname}}.html %}
   {% endif %}
 
 </head>
